@@ -14,3 +14,7 @@ resource "aws_s3_bucket" "demo" {
     Environment = "dev"
   }
 }
+
+resource "aws_s3_bucket" "extra" {
+  bucket = "atlantis-extra-bucket-${random_integer.suffix.result}"
+}
