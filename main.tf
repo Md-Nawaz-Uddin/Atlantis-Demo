@@ -18,3 +18,8 @@ resource "aws_s3_bucket" "demo" {
 resource "aws_s3_bucket" "extra" {
   bucket = "atlantis-extra-bucket-${random_integer.suffix.result}"
 }
+
+
+resource "aws_s3_bucket" "extra-bucket" {
+  bucket = "atlantis-extra---bucket-${random_integer.suffix.result}"
+}
