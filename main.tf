@@ -15,6 +15,6 @@ resource "aws_s3_bucket" "demo" {
   }
 }
 
-resource "aws_s3_bucket" "extra" {
-  bucket = "atlantis-extra-bucket-${random_integer.suffix.result}"
+resource "aws_s3_bucket" "extra-by-cli" {
+  bucket = "atlantis-extra-bucket-cli${random_integer.suffix.result}"
 }
