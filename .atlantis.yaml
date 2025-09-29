@@ -1,7 +1,6 @@
-version: 3
 projects:
   - dir: .
-    workspace: feature/add-second-bucket
+    workspace: pull-request-${PR_NUMBER}  # or branch name
     autoplan:
       when_modified: ["*.tf", "*.tfvars"]
       enabled: true
